@@ -1,0 +1,15 @@
+Client connected via WebSocket at 1:52:53 PM
+
+User requested the song audio.mp3
+
+File path: ./public/audio.mp3
+File size: 6561678 bytes
+
+Audio stream created.
+
+Sending audio data...
+
+Sent 101 chunks to the client
+
+Audio stream ended at 2024-04-18T18:52:53.205Z
+

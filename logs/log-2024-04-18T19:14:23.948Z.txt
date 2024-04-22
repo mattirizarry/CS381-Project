@@ -1,0 +1,31 @@
+Client connected via WebSocket at 4/18/2024, 2:14:50 PM
+
+User requested the song starboy.mp3
+
+File path: ./audio/starboy.mp3
+File size: 6561678 bytes
+
+Audio stream created.
+
+Sending audio data...
+
+Sent 101 chunks to the client
+
+Audio stream ended at 4/18/2024, 2:14:50 PM
+
+Client disconnected at 4/18/2024, 2:14:56 PM
+Client connected via WebSocket at 4/18/2024, 2:14:56 PM
+
+User requested the song starboy.mp3
+
+File path: ./audio/starboy.mp3
+File size: 6561678 bytes
+
+Audio stream created.
+
+Sending audio data...
+
+Sent 101 chunks to the client
+
+Audio stream ended at 4/18/2024, 2:14:56 PM
+

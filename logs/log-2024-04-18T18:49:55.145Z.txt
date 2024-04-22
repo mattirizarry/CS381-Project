@@ -1,0 +1,17 @@
+Client connected via web socket at 2024-04-18T18:49:56.869Z
+User requested the song audio.mp3
+File path: ./public/audio.mp3
+File size: 6561678 bytes
+Audio stream created.
+Sending audio data...
+Sent 101 chunks to the client
+Audio stream ended at 2024-04-18T18:49:56.981Z
+Client connected via web socket at 2024-04-18T18:50:02.606Z
+User requested the song audio.mp3
+File path: ./public/audio.mp3
+File size: 6561678 bytes
+Audio stream created.
+Sending audio data...
+Client disconnected at 2024-04-18T18:50:02.607Z
+Sent 101 chunks to the client
+Audio stream ended at 2024-04-18T18:50:02.714Z

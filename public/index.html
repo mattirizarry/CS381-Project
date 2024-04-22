@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Audio Streaming Client</title>
+    </head>
+    <body>
+        <audio controls id="audioPlayer">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            const audioPlayer = document.getElementById("audioPlayer")
+            const ws = new WebSocket("ws://localhost:3000")
+
+            ws.binaryType = "arraybuffer"
+
+            let audioChunks = []
+
+            ws.onopen = () => {
+                console.log("WebSocket connection established.")
+            }
+
+            ws.onmessage = (event) => {
+                if (event.data instanceof ArrayBuffer) {
+                    const receivedData = new Uint8Array(event.data)
+                    if (receivedData.length > 0) {
+                        audioChunks.push(receivedData)
+                        console.log(
+                            `Received audio data chunk (${receivedData.length} bytes).`,
+                        )
+                    } else {
+                        console.log("Received empty audio data chunk.")
+
+                        const audioBlob = new Blob(audioChunks, {
+                            type: "audio/mp3",
+                        })
+                        const audioUrl = URL.createObjectURL(audioBlob)
+
+                        audioPlayer.src = audioUrl
+                    }
+                }
+            }
+
+            ws.onerror = (error) => {
+                console.error("WebSocket error:", error)
+            }
+
+            ws.onclose = () => {
+                console.log("WebSocket connection closed.")
+            }
+        </script>
+    </body>
+</html>
