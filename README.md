@@ -211,3 +211,13 @@ pnpm start
 ```
 
 4. Open the client at https://localhost:3000
+
+## Problems Encountered
+
+There were several problems that I encountered, but they mainly surrounded how data was being sent over the socket. First, it was a challenge to even get data sent over the socket, and to initialize the socket. After a little while of banging my head against the wall and reading many articles on the subject, I finally was able to send a hello world over the socket. 
+
+Next, was how to process the audio file. That did not take as long, but it required some research and eventually I learned about the file stream method that would read in the file as a stream synchronously. Future work could include making the reading asynchronous, but that was not feasible for this time around.
+
+Finally, was the problem of how to send the file over the socket and not make the user download the file in its entireity before being able to play the song. I accomplished this by chunking the file, and sending chunks to the client. Once the client started receiving chunks, it would update the audio player until it is finished downloading.
+
+These were the three main problems that I encountered and how I solved them.
