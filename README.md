@@ -1,4 +1,4 @@
-# CS 381 Project
+# CS 381 Project - Matthew Irizarry
 
 This project was supposed to be a much more complicated project, but due to the time constraints of this class and others, I decided to focus on the functionality instead of the user interface.
 
