@@ -1,5 +1,8 @@
 # CS 381 Project - Matthew Irizarry
 
+**Presentation Link** 
+https://docs.google.com/presentation/d/1XFjKbxXNz3_NAdhTda__w_dXQCmoBtM4EizKGoZYLTA/edit?usp=sharing
+
 This project was supposed to be a much more complicated project, but due to the time constraints of this class and others, I decided to focus on the functionality instead of the user interface.
 
 ## Six Attributes
